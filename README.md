@@ -16,7 +16,7 @@ Open the localhost URL Astro prints. `npm run check` checks types; `npm run buil
 ## Where things live
 
 - `src/site.config.ts`: name, intro, description, domain, and social links. Intro is starter copy—replace it with your own.
-- `src/content/posts/`: Markdown posts. The sample article can be edited or removed.
+- `src/content/posts/`: Markdown posts. Ready for your first article.
 - `src/content.config.ts`: required fields for every post.
 - `src/pages/index.astro`: homepage and all published posts.
 - `src/pages/posts/[...slug].astro`: the shared article template.
