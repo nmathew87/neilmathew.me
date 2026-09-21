@@ -3,6 +3,6 @@ export const site = {
   name: 'Neil Mathew',
   url: 'https://neilmathew.me',
   description: 'Notes on technology, ideas, and things in progress.',
-  intro: 'A place to think out loud about technology, share what I’m learning, and try things out.',
+  intro: "This is my space to think out aloud about what i'm building and perhaps share a few things I've learnt along the way",
   socials: [] as { label: string; url: string }[],
 };
