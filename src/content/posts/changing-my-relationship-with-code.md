@@ -1,10 +1,9 @@
 ---
-title: "Changing my relationship with code"
-description: "On relearning how to enjoy building things"
+title: Changing my relationship with code
+description: On relearning how to enjoy building things
 publishDate: 2026-09-22
-draft: false
+draft: true
 ---
-
 For most of this year, I’ve been complaining about vibe coding. Not because it doesn’t work. Quite the opposite. It works annoyingly well.
 
 The thing I’ve been struggling with is that AI has taken away one of the parts of coding I actually loved: getting stuck. That sounds stupid when I write it out, but I mean it.
