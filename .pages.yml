@@ -1,0 +1,61 @@
+media:
+  input: public/images
+  output: /images
+  categories: [image]
+
+content:
+  - name: posts
+    label: Blog posts
+    type: collection
+    path: src/content/posts
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    exclude: [".gitkeep"]
+    view:
+      primary: title
+      fields: [title, publishDate, draft]
+      sort: publishDate
+      order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+        options:
+          maxlength: 180
+      - name: description
+        label: Subtitle / description
+        type: text
+        required: true
+        description: Shown under the title, on the homepage, and in link previews.
+        options:
+          maxlength: 200
+      - name: publishDate
+        label: Publication date
+        type: date
+        required: true
+        description: Display date only; future dates do not schedule publishing.
+        options:
+          time: false
+          format: yyyy-MM-dd
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
+        description: Keep enabled while writing. Turn off and save to publish on the next build.
+      - name: cover
+        label: Cover image (optional)
+        type: object
+        fields:
+          - name: src
+            label: Image
+            type: image
+            required: true
+          - name: alt
+            label: Image description
+            type: string
+            required: true
+            description: Describe the image for readers using screen readers.
+      - name: body
+        label: Article
+        type: rich-text
